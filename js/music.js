@@ -25,7 +25,8 @@ const songs = [
 { title: "No Life", artist: "Slipknot", src: "../assets/music/11 No Life.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
 { title: "Diluted", artist: "Slipknot", src: "../assets/music/12 Diluted.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
 { title: "Only One", artist: "Slipknot", src: "../assets/music/13 Only One.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
-{ title: "Scissors", artist: "Slipknot", src: "../assets/music/14 Scissors.mp3", cover: "../assets/images/slipknotAlbumCover.webp" }
+{ title: "Scissors", artist: "Slipknot", src: "../assets/music/14 Scissors.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
+{ title: "Join Me in Death", artist: "HIM", src: "../assets/music/12 Join Me in Death.mp3", cover: "../assets/images/himAlbumCover.webp"}
 ];
 
 const audio = document.getElementById('audio-player');
