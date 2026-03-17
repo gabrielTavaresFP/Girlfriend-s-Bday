@@ -15,6 +15,8 @@ const songs = [
     { title: "Would It Matter", artist: "Skillet", src: "../assets/music/14 Would It Matter (BT).mp3", cover: "../assets/images/skilletAlbumCover.webp" },
     { title: "Monster", artist: "Skillet", src: "../assets/music/15 Skillet - Monster (Radio Edit).flac", cover: "../assets/images/skilletAlbumCover.webp" },
 { title: "Eyeless", artist: "Slipknot", src: "../assets/music/03 Eyeless.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
+{ title: "(Sic)", artist: "Slipknot", src: "../assets/music/02 (Sic).mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
+{ title: "742617000027", artist: "Slipknot", src: "../assets/music/01 742617000027.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
 { title: "Wait And Bleed", artist: "Slipknot", src: "../assets/music/04 Wait And Bleed.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
 { title: "Surfacing", artist: "Slipknot", src: "../assets/music/05 Surfacing.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
 { title: "Spit It Out", artist: "Slipknot", src: "../assets/music/06 Spit It Out.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
