@@ -133,5 +133,24 @@ body.meuCodigo {
 
 input[type="range"] {
     flex: 1;
+    cursor : pointer;
     accent-color: #e56e82;
+}
+
+.volume-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    color: white;
+}
+
+.volume-container input {
+    width: 80px;
+}
+
+/* Botão Aleatório */
+.btn-active {
+    color: #e56e82 !important; /* Cor rosa para indicar que o modo aleatório está ligado */
+    text-shadow: 0 0 5px rgba(229, 110, 130, 0.8);
 }

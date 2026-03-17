@@ -32,10 +32,17 @@
             </div>
             
             <div class="controls">
+                <button id="shuffle" title="Ordem Aleatória"><i class="fas fa-random"></i></button>
                 <button id="prev"><i class="fas fa-step-backward"></i></button>
                 <button id="play" class="play-btn"><i class="fas fa-play"></i></button>
                 <button id="next"><i class="fas fa-step-forward"></i></button>
             </div>
+                
+            <div class="volume-container">
+    <i class="fas fa-volume-up"></i>
+    <input type="range" id="volume" min="0" max="1" step="0.1" value="1">
+</div>
+
 
             <div class="progress-container">
                 <span id="current-time">0:00</span>

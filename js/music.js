@@ -82,3 +82,58 @@ audio.addEventListener('timeupdate', () => {
     const progress = (audio.currentTime / audio.duration) * 100;
     document.getElementById('progress').value = progress || 0;
 });
+
+const progressBar = document.getElementById('progress');
+const volumeBar = document.getElementById('volume');
+const shuffleBtn = document.getElementById('shuffle');
+let isShuffle = false;
+
+// 1. Escolher o momento da música (clicar na barra)
+progressBar.addEventListener('input', () => {
+    const seekTime = (progressBar.value / 100) * audio.duration;
+    audio.currentTime = seekTime;
+});
+
+// 2. Atualizar a barra conforme a música toca
+audio.addEventListener('timeupdate', () => {
+    if (!isNaN(audio.duration)) {
+        const progress = (audio.currentTime / audio.duration) * 100;
+        progressBar.value = progress;
+        
+        // Atualizar os números de tempo
+        document.getElementById('current-time').innerText = formatTime(audio.currentTime);
+        document.getElementById('duration').innerText = formatTime(audio.duration);
+    }
+});
+
+function formatTime(seconds) {
+    const min = Math.floor(seconds / 60);
+    const sec = Math.floor(seconds % 60);
+    return `${min}:${sec < 10 ? '0' : ''}${sec}`;
+}
+
+// 3. Controle de Volume
+volumeBar.addEventListener('input', () => {
+    audio.volume = volumeBar.value;
+});
+
+// 4. Ordem Aleatória (Shuffle)
+shuffleBtn.addEventListener('click', () => {
+    isShuffle = !isShuffle;
+    shuffleBtn.classList.toggle('btn-active');
+});
+
+// Ajuste no botão de "Próxima" para respeitar o Aleatório
+document.getElementById('next').addEventListener('click', () => {
+    if (isShuffle) {
+        currentTrackIndex = Math.floor(Math.random() * songs.length);
+    } else {
+        currentTrackIndex = (currentTrackIndex + 1) % songs.length;
+    }
+    loadTrack(currentTrackIndex);
+});
+
+// Quando a música acabar, pula para a próxima automaticamente
+audio.addEventListener('ended', () => {
+    document.getElementById('next').click();
+});
