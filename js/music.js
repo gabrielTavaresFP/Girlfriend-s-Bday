@@ -8,7 +8,24 @@ const songs = [
     { title: "You Shook Me All Night Long", artist: "AC/DC", src: "../assets/music/07 - You Shook Me All Night Long.mp3", cover: "../assets/images/BackInBlack.webp" },
     { title: "Have a Drink on Me", artist: "AC/DC", src: "../assets/music/08 - Have a Drink on Me.mp3", cover: "../assets/images/BackInBlack.webp" },
     { title: "Shake a Leg", artist: "AC/DC", src: "../assets/music/09 - Shake a Leg.mp3", cover: "../assets/images/BackInBlack.webp" },
-    { title: "Rock and Roll Ain't Noise Pollution", artist: "AC/DC", src: "../assets/music/10 - Rock and Roll Ain't Noise Pollution.mp3", cover: "../assets/images/BackInBlack.webp" }
+    { title: "Rock and Roll Ain't Noise Pollution", artist: "AC/DC", src: "../assets/music/10 - Rock and Roll Ain't Noise Pollution.mp3", cover: "../assets/images/BackInBlack.webp" },
+    { title: "Hero", artist: "Skillet", src: "../assets/music/01 Hero [Album Version].mp3", cover: "../assets/images/skilletAlbumCover.webp" },
+    { title: "Awake And Alive", artist: "Skillet", src: "../assets/music/04 Awake And Alive.mp3", cover: "../assets/images/skilletAlbumCover.webp" },
+    { title: "Dead Inside", artist: "Skillet", src: "../assets/music/13 Dead Inside (BT).mp3", cover: "../assets/images/skilletAlbumCover.webp" },
+    { title: "Would It Matter", artist: "Skillet", src: "../assets/music/14 Would It Matter (BT).mp3", cover: "../assets/images/skilletAlbumCover.webp" },
+    { title: "Monster", artist: "Skillet", src: "../assets/music/15 Skillet - Monster (Radio Edit).flac", cover: "../assets/images/skilletAlbumCover.webp" },
+{ title: "Eyeless", artist: "Slipknot", src: "../assets/music/03 Eyeless.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
+{ title: "Wait And Bleed", artist: "Slipknot", src: "../assets/music/04 Wait And Bleed.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
+{ title: "Surfacing", artist: "Slipknot", src: "../assets/music/05 Surfacing.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
+{ title: "Spit It Out", artist: "Slipknot", src: "../assets/music/06 Spit It Out.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
+{ title: "Tattered & Torn", artist: "Slipknot", src: "../assets/music/07 Tattered & Torn.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
+{ title: "Me Inside", artist: "Slipknot", src: "../assets/music/08 Me Inside.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
+{ title: "Liberate", artist: "Slipknot", src: "../assets/music/09 Liberate.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
+{ title: "Prosthetics", artist: "Slipknot", src: "../assets/music/10 Prosthetics.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
+{ title: "No Life", artist: "Slipknot", src: "../assets/music/11 No Life.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
+{ title: "Diluted", artist: "Slipknot", src: "../assets/music/12 Diluted.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
+{ title: "Only One", artist: "Slipknot", src: "../assets/music/13 Only One.mp3", cover: "../assets/images/slipknotAlbumCover.webp" },
+{ title: "Scissors", artist: "Slipknot", src: "../assets/music/14 Scissors.mp3", cover: "../assets/images/slipknotAlbumCover.webp" }
 ];
 
 const audio = document.getElementById('audio-player');
