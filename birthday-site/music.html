@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOSSA PLAYLIST 🎵</title>
+    <link rel="stylesheet" href="../css/music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="meuCodigo">
+    <nav class="barraSuperior">
+        <a href="music.html">VOLTAR ❤ </a>
+        <a href="letter.html">Cartinha 💌 </a>
+        <a href="photos.html">Nossas Fotos 📸</a>
+        <a href="EuTeAmo.html">EU TE AMO ❤</a>
+    </nav>
+
+    <div class="spotify-container">
+        <div class="sidebar">
+            <h3>Sua Playlist 🎀</h3>
+            <ul id="playlist">
+                </ul>
+        </div>
+
+        <div class="main-player">
+            <div class="album-art">
+                <img src="../assets/images/capa-padrao.jpg" id="current-cover" alt="Capa">
+            </div>
+            <div class="track-info">
+                <h2 id="track-title">Selecione uma música</h2>
+                <p id="track-artist">Artista</p>
+            </div>
+            
+            <div class="controls">
+                <button id="prev"><i class="fas fa-step-backward"></i></button>
+                <button id="play" class="play-btn"><i class="fas fa-play"></i></button>
+                <button id="next"><i class="fas fa-step-forward"></i></button>
+            </div>
+
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress" value="0">
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio-player" src=""></audio>
+    <script src="../js/music.js"></script>
+</body>
+</html>

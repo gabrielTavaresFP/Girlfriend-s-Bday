@@ -1,0 +1,189 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position : relative;
+}
+
+
+
+.barraSuperior {
+    background-color: pink; 
+    display:flex;
+    gap:15px;
+    justify-content: center;
+
+   
+}
+
+.barraSuperior a {
+    padding: 2px 15px;
+    border-radius : 25px;
+    margin-top:1px;
+    
+    background-color : rgb(229, 110, 130);
+    color:white;
+    text-decoration : none;
+    font-size : 15px;
+    height : 30px;
+    font-size: 20px;
+
+    transition : 0.3s ease;
+}
+
+
+
+
+.barraSuperior a:hover {
+    background-color : rgb(255, 0, 0);
+    color:white;
+    transform: scale(1.08);
+}
+
+/* Mantendo seu estilo original */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position : relative;
+}
+
+.barraSuperior {
+    background-color: pink; 
+    display:flex;
+    gap:15px;
+    justify-content: center;
+    z-index: 100;
+}
+
+.barraSuperior a {
+    padding: 2px 15px;
+    border-radius : 25px;
+    margin-top:1px;
+    background-color : rgb(229, 110, 130);
+    color:white;
+    text-decoration : none;
+    height : 30px;
+    font-size: 20px;
+    transition : 0.3s ease;
+}
+
+.barraSuperior a:hover {
+    background-color : rgb(255, 0, 0);
+    transform: scale(1.08);
+}
+
+/* --- ESTILO DO ENVELOPE E CARTA --- */
+
+body.meuCodigo {
+    background-color: #ffe5ec; /* Rosa clarinho igual ao das fotos */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-carta {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top:180px;
+}
+
+.envelope-wrapper {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.envelope {
+    position: relative;
+    width: 900px;
+    height: 639px;
+    background-color: #fb6f92; /* Rosa mais escuro */
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Aba superior do envelope */
+.aba {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 450px solid transparent;
+    border-right: 450px solid transparent;
+    border-top: 378px solid #ff8fab;
+    border-bottom: 0 solid transparent;
+    z-index: 10;
+    transform-origin: top;
+    transition: transform 0.4s ease, z-index 0.2s;
+}
+
+/* Parte interna frontal do envelope */
+.corpo {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 450px solid #ffb3c1;
+    border-right: 450px solid #ffb3c1;
+    border-bottom: 261px solid #ffc2d1;
+    border-top: 378px solid transparent;
+    border-radius: 0 0 10px 10px;
+    z-index: 5;
+}
+
+/* O papel da carta */
+.papel {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 864px;
+    height: 324px;
+    background: white;
+    padding: 20px;
+    z-index: 2;
+    transition: transform 0.6s ease 0.3s, z-index 0.1s 0.3s, height 0.6s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-y: auto;
+}
+
+.texto-carta {
+    font-family: 'Comic Sans MS', cursive;
+    color: #555;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* --- ANIMAÇÃO DE ABERTURA --- */
+.aberto .aba {
+    transform: rotateX(180deg);
+    z-index: 1;
+}
+
+.aberto .papel {
+    transform: translateY(-220px); /* A carta sobe */
+    height: 630px; /* Ela cresce para dar mais espaço para escrever */
+    width : 855px;
+    z-index: 16;
+    transition: transform 0.6s ease 0.2s, z-index 0.1s 0.2s, height 0.6s;
+}
+
+.botao-abrir {
+    margin-top: 50px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fb6f92;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-abrir:hover {
+    background-color: #ff3366;
+    transform: scale(1.1);
+}
