@@ -1,4 +1,14 @@
-const songs = [
+const songs = [ 
+    { title: "Highway to Hell", artist: "AC/DC", src: "../assets/music/01 Highway to Hell.mp3", cover: "../assets/images/ACDCHighwayToHell.jpg" },
+    { title: "Girls Got Rhythm", artist: "AC/DC", src: "../assets/music/02 Girls Got Rhythm.mp3", cover: "../assets/images/ACDCHighwayToHell.jpg" },
+    { title: "Walk All Over You", artist: "AC/DC", src: "../assets/music/03 Walk All Over You.mp3", cover: "../assets/images/ACDCHighwayToHell.jpg" },
+    { title: "Touch Too Much", artist: "AC/DC", src: "../assets/music/04 Touch Too Much.mp3", cover: "../assets/images/ACDCHighwayToHell.jpg" },
+    { title: "Beating Around the Bush", artist: "AC/DC", src: "../assets/music/05 Beating Around the Bush.mp3", cover: "../assets/images/ACDCHighwayToHell.jpg" },
+    { title: "Shot Down in Flames", artist: "AC/DC", src: "../assets/music/06 Shot Down in Flames.mp3", cover: "../assets/images/ACDCHighwayToHell.jpg" },
+    { title: "Get It Hot", artist: "AC/DC", src: "../assets/music/07 Get It Hot.mp3", cover: "../assets/images/ACDCHighwayToHell.jpg" },
+    { title: "If You Want Blood (You've Got It)", artist: "AC/DC", src: "../assets/music/08 If You Want Blood (You've Got It).mp3", cover: "../assets/images/ACDCHighwayToHell.jpg" },
+    { title: "Love Hungry Man", artist: "AC/DC", src: "../assets/music/09 Love Hungry Man.mp3", cover: "../assets/images/ACDCHighwayToHell.jpg" },
+    { title: "Night Prowler", artist: "AC/DC", src: "../assets/music/10 Night Prowler.mp3", cover: "../assets/images/ACDCHighwayToHell.jpg" },
     { title: "Hells Bells", artist: "AC/DC", src: "../assets/music/01 - Hells Bells.mp3", cover: "../assets/images/BackInBlack.webp" },
     { title: "Shoot to Thrill", artist: "AC/DC", src: "../assets/music/02 - Shoot to Thrill.mp3", cover: "../assets/images/BackInBlack.webp" },
     { title: "What Do You Do for Money Honey", artist: "AC/DC", src: "../assets/music/03 - What Do You Do for Money Honey.mp3", cover: "../assets/images/BackInBlack.webp" },
